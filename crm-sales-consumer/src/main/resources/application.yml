@@ -1,0 +1,10 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: crm-sales-consumer
+
+eureka:
+  client:
+    service-url: # EurekaServer的地址，现在是自己的地址，如果是集群，需要加上其它Server的地址。
+      defaultZone: http://172.16.185.134:8088/eureka/
